@@ -1,0 +1,48 @@
+body {
+    transition: background-color 0.5s, color 0.5s;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 50px;
+  }
+  
+  /* Light Theme */
+  body.light {
+    background-color: #ffffff;
+    color: #333333;
+  }
+  
+  /* Dark Theme */
+  body.dark {
+    background-color: #aa1eb1;
+    color: #f0f0f0;
+  }
+  
+  /* Button Styling */
+  button {
+    padding: 15px 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: rgb(44, 144, 177);
+    color: white;
+    transition: transform 0.3s, background-color 0.3s;
+  }
+  
+  /* Button Hover Effect (CSS Transition) */
+  button:hover {
+    background-color: #b34b00;
+    transform: scale(1.1);
+  }
+  
+  /* Button Click Animation (CSS Keyframes) */
+  @keyframes bounce {
+    0%   { transform: scale(1); }
+    50%  { transform: scale(1.2); }
+    100% { transform: scale(1); }
+  }
+  
+  .bounce {
+    animation: bounce 0.5s;
+  }
+  
